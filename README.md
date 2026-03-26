@@ -8,8 +8,7 @@ movie_recommend.ipynb
 참고 영상
 https://www.youtube.com/watch?v=dzQZvebTvKc
 
-git > neo4j-graphrag
-https://github.com/neo4j/neo4j-graphrag-python?tab=readme-ov-file
+git > [neo4j-graphrag](https://github.com/neo4j/neo4j-graphrag-python?tab=readme-ov-file)
 
 - `pip install neo4j-graphrag`
 - Sandbox에서 GraphDB 불러오기
@@ -35,8 +34,6 @@ https://github.com/neo4j/neo4j-graphrag-python?tab=readme-ov-file
     ```
     
 - Gradio로 챗봇 배포
-    
-    ![image.png](attachment:19634b5a-5580-4879-85bc-c2f0c124d436:image.png)
 
 ### DB 조회결과에 따라 스스로 쿼리문을 수정하는 Agent | LangGraph | Text2Cypher
 text2cypher_agent.ipynb
@@ -44,3 +41,22 @@ text2cypher_agent.ipynb
 
 참고 영상
 https://www.youtube.com/watch?v=O93x9JvDQd0
+
+- `pip install langgraph`
+- GraphRAG 구현
+    
+    ```python
+    from typing import Annotated
+    from typing_extensions import TypedDict
+    
+    from langgraph.graph import StateGraph, START, END
+    from langgraph.graph.message import add_messages
+    
+    class State(TypedDict):
+        messages: Annotated[list, add_messages] # 메시지 누적
+        db_outputs: list
+    
+    graph_builder = StateGraph(State)
+    ```
+    
+- Text2Cypher는 LLM(gpt-4o)이 생성
