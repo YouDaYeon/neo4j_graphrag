@@ -5,13 +5,12 @@
 movie_recommend.ipynb
 
 
-참고 영상
-https://www.youtube.com/watch?v=dzQZvebTvKc
+참고 영상 > https://www.youtube.com/watch?v=dzQZvebTvKc
 
 git > [neo4j-graphrag](https://github.com/neo4j/neo4j-graphrag-python?tab=readme-ov-file)
 
 - `pip install neo4j-graphrag`
-- Sandbox에서 GraphDB 불러오기
+- [Sandbox](https://sandbox.neo4j.com/)에서 GraphDB 불러오기
 - GraphRAG 구현
     
     ```python
@@ -39,10 +38,10 @@ git > [neo4j-graphrag](https://github.com/neo4j/neo4j-graphrag-python?tab=readme
 text2cypher_agent.ipynb
 
 
-참고 영상
-https://www.youtube.com/watch?v=O93x9JvDQd0
+참고 영상 > https://www.youtube.com/watch?v=O93x9JvDQd0
 
 - `pip install langgraph`
+- [Sandbox](https://sandbox.neo4j.com/)에서 GraphDB 불러오기
 - GraphRAG 구현
     
     ```python
