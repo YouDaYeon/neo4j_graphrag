@@ -1,4 +1,5 @@
-노션(neo4j)
+[노션(neo4j)](https://www.notion.so/aistudio/Neo4j-32d6a768e0ee800f8cdeca78cfac4077
+)
 https://www.notion.so/aistudio/Neo4j-32d6a768e0ee800f8cdeca78cfac4077
 
 ### GraphDB와 LLM으로 추천시스템 챗봇 만들기(feat. Gradio)
